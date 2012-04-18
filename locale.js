@@ -6,7 +6,7 @@
   locale.current = null;
 
   // Allow the use of jQuery, Zepto, or Ender with the locale package.
-  var $ = root.jQuery || root.Zepto || root.ender;
+  var $ = this.jQuery || this.Zepto || this.ender;
   
   // Initialize a helper to retrieve the XMLHttpRequest.
   var getXMLHttpRequest = function () {
