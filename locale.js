@@ -41,7 +41,7 @@
   
   // If no frameworks were found attempt to retrieve an XHR object manually.
   var xhr = null;
-  if (!locale.current && xhr = getXMLHttpRequest()) {
+  if (!locale.current && (xhr = getXMLHttpRequest())) {
     xhr.open('HEAD', window.location, false);
     xhr.onreadystatechange = function () {
       if (xhr.readyState==4) { 
